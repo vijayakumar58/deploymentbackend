@@ -40,6 +40,7 @@ app.get('/users', async function(req,res){
         await connection.close();
         res.json(resUser);
     } catch (error) {
+        console.log(error);
         res.status(500).json({message:"Something Went Wrong"})
     }
 })
