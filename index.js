@@ -6,12 +6,12 @@ const mongoClient = mongodb.MongoClient;
 const dotenv = require("dotenv").config();
 const URL = process.env.DB;
 const DB = "demofullstack"
-app.listen(process.env.PORT || 3001);
+app.listen(process.env.PORT || 3000);
 
 //middleware
 app.use(express.json());
 app.use(cors({
-    origin : "https://marvelous-sprite-474609.netlify.app"
+    origin : "https://localhost:3000"
 }))
 
 app.get('/', function(req,res){
