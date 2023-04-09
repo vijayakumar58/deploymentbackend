@@ -27,6 +27,7 @@ app.post('/user',async function(req,res){
         await connection.close();
         res.json({message:"User Data Insert"})
     } catch (error) {
+        console.log(error)
         res.status(500).json({message:"Something Went Wrong"})
     }
 })
