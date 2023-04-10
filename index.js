@@ -11,7 +11,7 @@ app.listen(process.env.PORT || 3000);
 //middleware
 app.use(express.json());
 app.use(cors({
-    origin : "https://localhost:3000"
+    origin : "*"
 }))
 
 app.get('/home', function(req,res){
