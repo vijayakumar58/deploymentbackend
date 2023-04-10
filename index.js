@@ -14,7 +14,7 @@ app.use(cors({
     origin : "https://localhost:3000"
 }))
 
-app.get('/', function(req,res){
+app.get('/home', function(req,res){
     res.send("Welcome to Full-Stack Demo")
 })
 
